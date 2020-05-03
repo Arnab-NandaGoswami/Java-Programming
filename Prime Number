@@ -1,0 +1,51 @@
+//Check Whether a Number is Prime or Not
+
+package primenumber;
+
+import java.util.*;
+public class PrimeNumber {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int counter = 0;
+        System.out.println("Enter a Number to Check Whether It is a Prime Number or Not");
+        int a = sc.nextInt();
+        if(a==0 || a==1){
+            System.out.println("The Number "+a+" is Neither a Prime nor a Non-Prime Number");
+        }else{
+            for(int b=2;b<a/2;b++){
+                if(a%b==0){
+                    counter++;
+                    break;
+                }
+            }
+            if(counter==0){
+            System.out.println("The Number "+a+ " is a Prime Number");
+            }else{
+            System.out.println("The Number "+a+ " is Not a Prime Number");
+            }
+        }  
+    }   
+}
+
+/*
+Output:
+
+Case 1:
+If the Number is 0 or 1:
+Enter a Number to Check Whether It is a Prime Number or Not
+(Number - 0/1)
+The Number (Number) is Neither a Prime nor a Non-Prime Number
+
+Case 2:
+If The Number is Not Prime:
+Enter a Number to Check Whether It is a Prime Number or Not
+(Number)
+The Number (Number) is Not a Prime Number
+
+Case 3:
+If The Number is Prime:
+Enter a Number to Check Whether It is a Prime Number or Not
+(Number)
+The Number (Number) is a Prime Number
+
+*/
