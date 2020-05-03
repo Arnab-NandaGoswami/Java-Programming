@@ -1,0 +1,25 @@
+// Java Programming to Check Whether a Number is Even or Odd
+
+package evenodd;
+
+import static java.time.Clock.system;
+import java.util.*;
+public class EvenOdd {
+    public static void main(String[] args) {
+        System.out.println("Enter the Number to check:-");
+        Scanner sc=new Scanner(System.in);
+        int a = sc.nextInt();
+        if(a%2==0){
+            System.out.println("The Number is Even");
+        }else{
+            System.out.println("The Number is Odd");
+        }
+    }
+}
+
+/*
+Output:-
+Enter the Number to Check:-
+"Entered Number"
+The Number is Even/Odd
+*/
