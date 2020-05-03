@@ -1,0 +1,47 @@
+//Print All Prime Numbers Within A Limit
+
+package listofprimenumber;
+
+import java.util.*;
+public class ListOfPrimeNumber {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("Enter Your Boundaries Within Which You Want to Print All Prime Numbers:-");
+        System.out.println("Enter Lower Limit:");
+        int a = sc.nextInt();
+        if(a==0 || a==1){
+            a=2;
+        }
+        System.out.println("Enter Upper Limit:");
+        int b = sc.nextInt();
+        System.out.println("The Prime Numbers from "+a+" to "+b+" are:-");
+        while(a<=b){
+            int counter = 0;
+            for(int c=2;c<a;c++){
+                if(a%c==0){
+                    counter++;
+                    break;
+                }
+            }
+            if(counter==0){
+            System.out.println(a);
+            }
+            a++;
+        }
+    }
+}
+
+/*
+
+Output:-
+
+Enter Your Boundaries Within Which You Want to Print All Prime Numbers:-
+Enter Lower Limit:
+(Number 1)
+Enter Upper Limit:
+(Number 2)
+The Prime Numbers from (Number 1) to (Number 2) are:-
+List of Prime Numbers
+
+*/
