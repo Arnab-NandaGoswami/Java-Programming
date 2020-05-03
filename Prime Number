@@ -12,7 +12,7 @@ public class PrimeNumber {
         if(a==0 || a==1){
             System.out.println("The Number "+a+" is Neither a Prime nor a Non-Prime Number");
         }else{
-            for(int b=2;b<a/2;b++){
+            for(int b=2;b<a;b++){
                 if(a%b==0){
                     counter++;
                     break;
