@@ -1,0 +1,68 @@
+//Check Whether Any Number is Divisible by Another Number or Not 
+
+package divisiblebynumberany;
+
+import java.util.*;
+public class DivisibleByNumberAny {
+    public static void main(String[] args) {
+        System.out.println("Enter Dividend :-");
+        Scanner sc=new Scanner(System.in);
+        int a = sc.nextInt();
+        System.out.println("Enter Divisor :-");
+        int b = sc.nextInt();
+        if(b==0){
+            System.out.println("!!!ERROR!!!");
+            System.out.println("Enter Correct Number");
+            System.out.println("The Divisor can't be Zero(0)");
+        }else{
+            int c = a%b;
+            int d = a/b;
+            int e = (a-c)/b;
+            if(c==0){
+                System.out.println("The Number "+a+" is divisible by "+b);
+                System.out.println("The Quotient is = "+d);
+                System.out.println("The reminder will be = "+c);
+            }else{
+                System.out.println("The number "+a+" is not divisible by "+b);
+                System.out.println("The Quotient is = "+e);
+                System.out.println("The reminder will be = "+c);
+            }
+        }
+    }
+}
+
+/*
+
+Output:
+
+Case 1:
+If Dividend == 0 Then
+Enter Dividend :-
+(Dividend)
+Enter Divisor :-
+(Divisor)
+!!!ERROR!!!
+Enter Correct Number
+The Divisor can't be Zero(0)
+
+Case 2:
+If Divisible Then
+Enter Dividend :-
+(Dividend)
+Enter Divisor :-
+(Divisor)
+The Number (Dividend) is divisible by (Divisor)
+The Quotient is = (Quotient)
+The reminder will be = 0
+
+Case 3:
+If Not Devisible Then
+Enter Dividend :-
+(Dividend)
+Enter Divisor :-
+(Divisor)
+The Number (Dividend) is Not divisible by (Divisor)
+The Quotient is = (Quotient)
+The reminder will be = (Reminder)
+
+*/
