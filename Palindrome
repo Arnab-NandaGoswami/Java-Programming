@@ -1,0 +1,46 @@
+//Check Whether a Given Input is a Palindromic or Not:-
+
+package palindrome;
+
+import java.util.*;
+public class Palindrome {
+    public static void main(String[] args) {
+        int counter =0;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a Numbers or a String to Check Whether it is Palindromic or Not");
+        String input = sc.nextLine();
+        int length = input.length();
+        for(int i=0;i<length;i++){
+            for(int j=length-1;j>=0;j--){
+                if(input.charAt(i)==input.charAt(j)){
+                    counter = 1;
+                }else{
+                    counter = 0;
+                }
+            }
+        }
+        if(counter==1){
+            System.out.println("The Given Input is a Palindromic Sequence");
+        }else{
+            System.out.println("The Given Input is Not a Palindromic Sequence");
+        }
+    }
+}
+
+/*
+
+Output:-
+
+Case 1:
+If the Number is Not a Palindromic Number
+Enter a Numbers or String to Check Whether it is Palindromic or Not
+(Input)
+The Given Input is Not a Palindromic Sequence
+
+Case 2:
+If the Number is a Palindromic Number
+Enter a Numbers or String to Check Whether it is Palindromic or Not
+(Input)
+The Given Input is a Palindromic Sequence
+
+*/
