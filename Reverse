@@ -1,0 +1,28 @@
+// Determine The Reverse of Any String or Number
+
+package reverse;
+
+import java.util.*;
+public class Reverse {
+    public static void main(String[] args) {
+        String reverse="";
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter Any Number or String to Get It's Reverse Number");
+        String input = sc.nextLine();
+        int lengthOfString = input.length();
+        for(int i=lengthOfString-1;i>=0;i--){
+            reverse=reverse+input.charAt(i);
+        }
+        System.out.println("The Reverse of The Given Input is -  "+reverse);
+    }
+}
+
+/*
+
+Output:-
+
+Enter Any Number or String to Get It's Reverse Number
+(Input)
+The Reverse of The Given Input is- (Reverse of Input)
+
+*/
