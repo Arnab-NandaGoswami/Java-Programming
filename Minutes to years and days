@@ -1,0 +1,26 @@
+// Convert Minutes into Years and Days :-
+
+package minutetoyear;
+
+import static java.lang.Math.floor;
+import java.util.Scanner;
+
+public class MinuteToYear {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int minute = sc.nextInt();
+        int day = (int) floor(minute/1440);
+        int year = (int) floor(day/365);
+        int dayFinal = day-year*365;
+        System.out.println(year+" years and "+dayFinal+ " days");
+    }
+    
+}
+
+/*
+Output:-
+Enter your Minutes:-
+3456789
+6 years and 210 days
+*/
